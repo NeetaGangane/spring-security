@@ -1,0 +1,15 @@
+CREATE TABLE `appuser` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `userPassword` varchar(100) NOT NULL,
+  `userName` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `springsecurity`.`appuser`
+(`id`,
+`userPassword`,
+`userName`)
+VALUES
+('1', '$2a$10$2FQyVSvCUU7VOkGI2ewyyetAXAqkxJAlU9wk2GKImbNwTkFlIDVOK', 'viraj');
+
+
